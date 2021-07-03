@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\helci\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\helci\\.nuget\\packages"
+    ]
+  }
+}
