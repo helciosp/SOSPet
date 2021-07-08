@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,22 +8,23 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/SOSPet.css" />
 </head>
+
 <body>
-    <header>
-        <h1>SOSPet</h1>
+    <header id="header">
+        <h1 class="h1"><a id="a_logo_header" href="~/Home">SOSPet</a></h1>
         <nav>
-            <ul>
-                <li><a href="~/servicos/pre_agendamento">Pré-agendamento</a></li>
-                <li><a href="~/usuario/solicitacao">Solicitaçao de Cadastro</a></li>
-                <li><a href="~/usuario/login">Login</a></li>
+            <ul class="ul" id="ul_header">
+                <li class="li_header"><a class="a_li_header" href="~/servicos/pre_agendamento">Pré-agendamento</a></li>
+                <li class="li_header"><a class="a_li_header" href="~/usuario/solicitacao">Solicitaçao de Cadastro</a></li>
+                <li class="li_header"><a class="a_li_header" href="~/usuario/login">Login</a></li>
             </ul>
         </nav>
     </header>
-    <section>
+    <div>
         <main>
             @RenderBody()
         </main>
-    </section>
+    </div>
     <footer>
         <div>
             &copy; 2021 - SOSPet
@@ -32,4 +34,5 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/js/SOSPet.js"></script>
 </body>
+
 </html>
