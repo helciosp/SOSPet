@@ -1,10 +1,12 @@
-﻿h1.h1 {
-    margin-top: auto;
-    margin-bottom: auto;
+﻿.h1 {
+    margin-top: 0;
+    margin-bottom: 0;
 }
-ul.ul{
-    margin-bottom: auto;
-    margin-top: auto;
+.ul{
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-left: 0;
+
 }
 /* footer {
     position:absolute;
@@ -27,6 +29,7 @@ a:active {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
+    height: 70px;
 }
 #a_logo_header {
     color: #ffffff;
@@ -43,4 +46,89 @@ a:active {
     background-color: #ffffff;
     padding: 5px;
     border-radius: 10px;
+}
+.access_header {
+    color: #ffffff;
+    background-color: #6b6b6b;
+    border: solid 0.5px #ffffff;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+@media (max-width: 570px) {
+
+    #nav_header {
+        display: none;
+    }
+    .one, .two, .three {
+        background-color: #ffffff;
+        height: 5px;
+        width: 100%;
+        margin: 5px auto;
+        border-radius: 1em;
+        transition: 0.3s;
+    }
+    .hamburger {
+        width: 40px;
+        height: 30px;
+    }
+    #header.on{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #e93c11;
+        align-items: flex-start;
+        justify-content: space-between;
+        display: block;
+        z-index: 10;
+    }
+    #header.on #nav_header{
+        display: block;   
+    }
+
+    #header.on .hamburger {
+        position: absolute;
+        right: 1rem;
+        top: 18px;
+    }
+
+    #header.on .hamburger .one {
+        transform: rotate(45deg) translate(8px, 10px);
+        margin: 0;
+    }
+
+    #header.on .hamburger .two {
+        opacity: 0;
+    }
+
+    #header.on .hamburger .three {
+        transform: rotate(135deg) translate(-5px, 5px);
+        margin: 0;
+    }
+    #header.on #nav_header #ul_header{
+        transition-duration: 0.5s;
+        font-size: calc(1.5rem + 1vw);
+        display: block;
+        margin: 10px;
+        text-align: center;   
+    }
+    #header.on #nav_header #ul_header .li_header {
+       margin-right: 0;
+       height: 100px;
+    }
+    #header.on #nav_header #ul_header .li_header .a_li_header {
+        color: #ffffff;
+        padding: 0;
+        border-radius: 0;
+        background-color: transparent;
+    }
+    #header.on #nav_header #ul_header .li_header .access_header {
+        color: #ffffff;
+        background-color: transparent;
+        border: transparent;
+        padding: 0;
+        border-radius: 0;
+    }
 }

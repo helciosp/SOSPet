@@ -4,11 +4,15 @@ namespace SOSPet.Controllers
 {
     public class UsuarioController : Controller
     {
-        public IActionResult Solicitacao()
+        public IActionResult Cadastro()
         {
             return View();
         }
         public IActionResult Login()
+        {
+            return View();
+        }
+        public IActionResult Conta()
         {
             return View();
         }

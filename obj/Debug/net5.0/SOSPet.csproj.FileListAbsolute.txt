@@ -40,4 +40,5 @@ C:\Users\helci\OneDrive\Documentos\Curso\ASP\SOSPet\obj\Debug\net5.0\SOSPet.genr
 C:\Users\helci\OneDrive\Documentos\Curso\ASP\SOSPet\obj\Debug\net5.0\SOSPet.csproj.CopyComplete
 C:\Users\helci\OneDrive\Documentos\Curso\ASP\SOSPet\obj\Debug\net5.0\Razor\Views\Servicos\Pre_agendamento.cshtml.g.cs
 C:\Users\helci\OneDrive\Documentos\Curso\ASP\SOSPet\obj\Debug\net5.0\Razor\Views\Usuario\Login.cshtml.g.cs
-C:\Users\helci\OneDrive\Documentos\Curso\ASP\SOSPet\obj\Debug\net5.0\Razor\Views\Usuario\Solicitacao.cshtml.g.cs
+C:\Users\helci\OneDrive\Documentos\Curso\ASP\SOSPet\obj\Debug\net5.0\Razor\Views\Usuario\Cadastro.cshtml.g.cs
+C:\Users\helci\OneDrive\Documentos\Curso\ASP\SOSPet\obj\Debug\net5.0\Razor\Views\Usuario\Conta.cshtml.g.cs

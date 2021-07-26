@@ -10,13 +10,19 @@
 </head>
 
 <body>
-    <header id="header">
-        <h1 class="h1"><a id="a_logo_header" href="~/Home">SOSPet</a></h1>
-        <nav>
+    <header id="header" class="on">
+        <h1 class="h1" id="h1_header"><a id="a_logo_header" href="~/">SOSPet</a></h1>
+        <div class="hamburger">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+        </div>
+        <nav id="nav_header">
             <ul class="ul" id="ul_header">
                 <li class="li_header"><a class="a_li_header" href="~/servicos/pre_agendamento">Pré-agendamento</a></li>
-                <li class="li_header"><a class="a_li_header" href="~/usuario/solicitacao">Solicitaçao de Cadastro</a></li>
-                <li class="li_header"><a class="a_li_header" href="~/usuario/login">Login</a></li>
+                <li class="li_header"><a class="access_header" href="~/usuario/cadastro">Cadastre-se</a></li>
+                <li class="li_header"><a class="access_header" href="~/usuario/login">Faça login</a></li>
+                <li class="li_header"><a class="access_header" href="~/usuario/conta">Conta</a></li>
             </ul>
         </nav>
     </header>
@@ -30,7 +36,7 @@
             &copy; 2021 - SOSPet
         </div>
     </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/jquery/dist/jquery-3.6.0.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="~/js/SOSPet.js"></script>
 </body>
