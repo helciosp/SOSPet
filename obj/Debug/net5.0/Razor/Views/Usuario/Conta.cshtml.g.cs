@@ -19,15 +19,8 @@ using SOSPet;
 #line default
 #line hidden
 #nullable disable
-#nullable restore
-#line 2 "C:\Users\helci\OneDrive\Documentos\Curso\ASP\SOSPet\Views\_ViewImports.cshtml"
-using SOSPet.Models;
-
-#line default
-#line hidden
-#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b9866ce59279464a7b4cae7741e39c6e6d0b90b9", @"/Views/Usuario/Conta.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"c4cc896fb52478e0aa81684735ea03582c8b5dfc", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"71e0e96afec6b81ca9019c890489c03c727cc8aa", @"/Views/_ViewImports.cshtml")]
     public class Views_Usuario_Conta : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

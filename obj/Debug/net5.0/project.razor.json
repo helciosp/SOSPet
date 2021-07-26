@@ -15649,11 +15649,6 @@
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\helci\\OneDrive\\Documentos\\Curso\\ASP\\SOSPet\\Views\\Shared\\Error.cshtml",
-      "TargetPath": "Views\\Shared\\Error.cshtml",
-      "FileKind": "mvc"
-    },
-    {
       "FilePath": "c:\\Users\\helci\\OneDrive\\Documentos\\Curso\\ASP\\SOSPet\\Views\\Home\\Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
