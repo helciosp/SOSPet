@@ -1,7 +1,50 @@
+@model UsuarioModel;
+
 @{
-    ViewData["Title"] = "Solicitação de Cadastro";
+    ViewData["Title"] = "Cadastro";
 }
 
 <section>
     <h1>Cadastro</h1>
+    <form asp-action="Cadastro" method="POST"> 
+
+        <div class="row">
+            <div class="col-sm">
+                <label asp-for="PrimeiroNome">Nome:</label>
+                <input class="form-control" asp-for="PrimeiroNome" name="PrimeiroNome" /> 
+            </div>
+            <div class="col-sm">
+                <label asp-for="SegundoNome">Sobrenome:</label>
+                <input class="form-control" asp-for="SegundoNome" name="SegundoNome" />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm">
+                <label asp-for="Email">Email: </label>
+                <input class="form-control" asp-for="Email" name="Email" type="email" />
+            </div>
+            <div class="col-sm">
+                <label asp-for="Senha">Senha: </label>
+                <input class="form-control" asp-for="Senha" name="Senha" type="password"/>
+            </div>
+        </div>
+            <div>
+                <label asp-for="Telefone">Telefone: </label>
+                <input class="form-control" asp-for="Telefone" name="Telefone" type="tel" />
+            </div>
+        <div class="row">
+            <div class="col-sm-7">
+                <label asp-for="Cpf">CPF: </label>
+                <input class="form-control" asp-for="Cpf" name="Cpf" />
+            </div>
+            <div class="col">
+                <label asp-for="DataNascimento">Nascimento: </label>
+                <input class="form-control" asp-for="DataNascimento" name="DataNascimento" type="date" />
+            </div>
+        </div>
+        <div class="d-flex justify-content-end mt-3">
+            <button class="btn btn-secondary" type="submit"> Enviar </button>
+        </div>
+    </form>
 </section>
