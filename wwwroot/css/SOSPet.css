@@ -8,11 +8,11 @@
     padding-left: 0;
 
 }
-/* footer {
-    position:absolute;
+footer {
+    position: fixed;
     bottom:0;
     width:100%;
-} */
+}
 a:link {
     text-decoration:none;
 }
