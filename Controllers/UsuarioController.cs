@@ -14,6 +14,8 @@ namespace SOSPet.Controllers
         [HttpPost]
         public IActionResult Cadastro(UsuarioModel u)
         {
+            UsuarioRepository ur = new UsuarioRepository();
+            ur.Insert(u);
             return View();
         }
         public IActionResult Login()
