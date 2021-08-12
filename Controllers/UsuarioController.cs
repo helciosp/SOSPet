@@ -41,7 +41,14 @@ namespace SOSPet.Controllers
 
         public IActionResult Endereco()
         {
-            return View();
+            if(HttpContext.Session.GetInt32("IdUsuario") == null)
+            {
+                return Redirect("login");
+            }
+            else
+            {
+                return View();
+            }
             
         }
         [HttpPost]
