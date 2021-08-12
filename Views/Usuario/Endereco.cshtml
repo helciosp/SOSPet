@@ -1,0 +1,45 @@
+@model EnderecoModel;
+
+@{
+    ViewData["Title"] = "Cadastro de endereço";
+}
+
+<section>
+    <h1>Cadastro de Endereco</h1>
+    <form asp-action="Endereco" method="POST"> 
+        <div class="form-group">
+            <label asp-for="Cep">CEP: </label>
+            <input class="form-control" asp-for="Cep" name="Cep"/>
+        </div>
+        <div class="row">
+            <div class="col-sm-4">
+                <label asp-for="Estado">Estado: </label>
+                <input class="form-control" asp-for="Estado" name="Estado" />
+            </div>
+            <div class="col-sm-4">
+                <label asp-for="Cidade">Cidade: </label>
+                <input class="form-control" asp-for="Cidade" name="Cidade" />
+            </div>
+            <div class="col-sm-4">
+                <label asp-for="Bairro">Bairro: </label>
+                <input class="form-control" asp-for="Bairro" name="Bairro"/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-8">
+                <label asp-for="Rua">Rua: </label>
+                <input class="form-control" asp-for="Rua" name="Rua" />
+            </div>
+            <div class="col-sm-4">
+                <label asp-for="Numero">Numero: </label>
+                <input class="form-control" asp-for="Numero" name="Numero" />
+            </div>
+            <div>
+                <input type="hidden" asp-for="IdUsuario" name="id" />
+            </div>
+        </div>
+        <div class="d-flex justify-content-end mt-3">
+            <button class="btn btn-secondary" type="submit"> Enviar </button>
+        </div>
+    </form>
+</section>
