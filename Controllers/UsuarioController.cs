@@ -34,6 +34,22 @@ namespace SOSPet.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public IActionResult Login(UsuarioModel u)
+        {
+            UsuarioRepository ur = new UsuarioRepository();
+            UsuarioModel usuario = ur.SelectId(u);
+            if(usuario != null)
+            {
+                return Redirect("../Home");
+            }
+            else
+            {
+                ViewBag.ErrLogin = "Não encontrado";
+                return View();
+            }
+            
+        }
         public IActionResult Conta()
         {
             return View();
