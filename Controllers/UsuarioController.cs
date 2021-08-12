@@ -41,7 +41,8 @@ namespace SOSPet.Controllers
             UsuarioModel usuario = ur.SelectId(u);
             if(usuario != null)
             {
-                return Redirect("../Home");
+                HttpContext.Session.SetInt32("IdUsuario", usuario.Id);
+                return Redirect("../");
             }
             else
             {
