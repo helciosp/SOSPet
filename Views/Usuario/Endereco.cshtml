@@ -34,12 +34,10 @@
                 <label asp-for="Numero">Numero: </label>
                 <input class="form-control" asp-for="Numero" name="Numero" />
             </div>
-            <div>
-                <input type="hidden" asp-for="IdUsuario" name="id" />
-            </div>
         </div>
         <div class="d-flex justify-content-end mt-3">
             <button class="btn btn-secondary" type="submit"> Enviar </button>
         </div>
+        <p>@ViewBag.Err</p>
     </form>
 </section>

@@ -71,7 +71,18 @@ namespace SOSPet.Controllers
         [HttpPost]
         public IActionResult Endereco(EnderecoModel e)
         {
-            return View();
+            EnderecoRepository er = new EnderecoRepository();
+            if(HttpContext.Session.GetInt32("IdUsuario") != null)
+            {
+                er.Insert(e, HttpContext.Session.GetInt32("IdUsuario").GetValueOrDefault());
+                return Redirect("../");
+            }
+            else
+            {
+                ViewBag.Err = "Algum não está no lugar";
+                return View();
+            }
+            
         }
 
     }

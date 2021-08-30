@@ -24,3 +24,5 @@ CREATE Table tb_endereco (
     id_usuario INT,
     CONSTRAINT fk_usuario FOREIGN KEY (id_usuario) REFERENCES tb_usuario (id_usuario)
 );
+
+ALTER TABLE tb_endereco MODIFY numero INT;
