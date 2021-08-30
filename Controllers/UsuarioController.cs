@@ -42,6 +42,7 @@ namespace SOSPet.Controllers
             if(usuario != null)
             {
                 HttpContext.Session.SetInt32("IdUsuario", usuario.Id);
+                HttpContext.Session.SetString("PrimeiroNome", usuario.PrimeiroNome);
                 return Redirect("../");
             }
             else

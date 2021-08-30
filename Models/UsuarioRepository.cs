@@ -1,5 +1,4 @@
 using System;
-using Microsoft.AspNetCore.Http;
 using MySqlConnector;
 
 namespace SOSPet.Models
@@ -26,7 +25,7 @@ namespace SOSPet.Models
         {
             connection.Open();
 
-            string sql1 = "SELECT id_usuario FROM tb_usuario WHERE email = @Email AND senha = @Senha";
+            string sql1 = "SELECT id_usuario, primeiro_nome FROM tb_usuario WHERE email = @Email AND senha = @Senha";
             MySqlCommand command = new MySqlCommand(sql1, connection);
             command.Parameters.AddWithValue("@Email", access.Email);
             command.Parameters.AddWithValue("@Senha", access.Senha);
@@ -37,7 +36,8 @@ namespace SOSPet.Models
             if(reader.Read())
             {
                 usuario = new UsuarioModel();
-                usuario.Id = reader.GetInt32("id_usuario");   
+                usuario.Id = reader.GetInt32("id_usuario");
+                usuario.PrimeiroNome = reader.GetString("primeiro_nome");
             }
 
             connection.Clone();

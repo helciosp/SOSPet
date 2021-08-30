@@ -19,10 +19,16 @@
         </div>
         <nav id="nav_header">
             <ul class="ul" id="ul_header">
-                <li class="li_header"><a class="a_li_header" href="~/servicos/pre_agendamento">Pré-agendamento</a></li>
-                <li class="li_header"><a class="access_header" href="~/usuario/cadastro">Cadastre-se</a></li>
-                <li class="li_header"><a class="access_header" href="~/usuario/login">Faça login</a></li>
-                <li class="li_header"><a class="access_header" href="~/usuario/conta">Conta</a></li>
+                @if(Context.Session.GetString("PrimeiroNome") != null)
+                {
+                    <li class="li_header"><a class="a_li_header" href="~/servicos/pre_agendamento">Pré-agendamento</a></li>
+                    <li class="li_header"><a class="access_header" href="~/usuario/conta">Conta</a></li>
+                }
+                @if(Context.Session.GetString("PrimeiroNome") == null)
+                {
+                    <li class="li_header"><a class="access_header" href="~/usuario/cadastro">Cadastre-se</a></li>
+                    <li class="li_header"><a class="access_header" href="~/usuario/login">Faça login</a></li>
+                }
             </ul>
         </nav>
     </header>
